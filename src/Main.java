@@ -38,6 +38,7 @@ public class Main {
 
 
     /// Diese Methoden stellt die anfänglichen Optionen für das Spielfenster ein.
+    @SuppressWarnings("ReassignedVariable")
     public static void InitializeFrame(JFrame frame, int rows, int columns) {
         // Wenn wir auf X drücken, soll das Programm geschlossen werden.
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -62,6 +63,7 @@ public class Main {
     }
 
     /// Diese Methode setzt die Farbe aller Felder, je nach ihrem Inhalt.
+    @SuppressWarnings("ReassignedVariable")
     public static void RepaintPanels() {
         for (int y = 0; y < gameframe.panels.length; y++) {
             for (int x = 0; x < gameframe.panels[y].length;x++) {
